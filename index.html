@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Jelszó</title>
+    <script>
+        function jelszoEllenorzes() {
+            var jelszo = document.getElementById("JelszoDoboz");
+            var beirtJelszo = jelszo.value;
+            if (beirtJelszo === "Ernest300") {
+                return true;
+            }
+            alert("Hozzáférés megtagadva! Helytelen jelszó!");
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="szoveg">
+        <p style="font-size: 30pt;">A MONK-GYÉMÁNT FELFEDEZÉSE</p>
+        <p>A weblap eléréséhez add meg a jelszót!</p>
+        <p>Jelszó: <input id="JelszoDoboz" type="password"/></p>
+        <a href="https://kovacs-marcell.github.io/cards7.github.io/" onclick="return jelszoEllenorzes();">
+            A jelszó elküldéséhez és a weblap felkereséséhez kattints ide
+        </a>
+    </div>
+</body>
+</html>
